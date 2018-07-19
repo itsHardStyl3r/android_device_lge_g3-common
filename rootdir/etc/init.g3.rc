@@ -349,7 +349,7 @@ on property:vendor.bluetooth.hciattach=false
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
-    group camera system inet input graphics
+    group camera system inet input graphics gps
 
 service vendor.qseecomd /vendor/bin/qseecomd
     class core
