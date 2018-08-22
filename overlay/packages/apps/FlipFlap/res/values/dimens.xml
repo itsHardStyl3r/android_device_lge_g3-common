@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (c) 2017 The LineageOS Project
+<!--  Copyright (C) 2018 The LineageOS Project
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -19,7 +19,6 @@
 -->
 
 <resources>
-
     <!-- Define main circle parameters (config_deviceCoverType == 2) -->
     <dimen name="y_offset">-215px</dimen>
     <dimen name="radius_offset">-110px</dimen>

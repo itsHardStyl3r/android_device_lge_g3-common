@@ -1,5 +1,6 @@
 #
-# Copyright 2014 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter g3 g3ds d850 d851 d852 d855 ls990 vs985 f400, $(TARGET_DEVICE)),)
+ifneq ($(filter g3 d850 d851 d852 d855 f400 g3ds ls990 vs985, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 LOCAL_STATIC_LIBRARIES := libbase
