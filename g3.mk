@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
 
 # IRSC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+    $(LOCAL_PATH)/configs/gps/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -128,7 +128,11 @@ PRODUCT_PACKAGES += \
     gps.msm8974
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/izat.conf:system/etc/izat.conf
+    $(LOCAL_PATH)/configs/gps/flp.conf:system/etc/flp.conf
+    $(LOCAL_PATH)/configs/gps/izat.conf:system/etc/izat.conf
+    $(LOCAL_PATH)/configs/gps/lowi.conf:system/etc/lowi.conf
+    $(LOCAL_PATH)/configs/gps/sap.conf:system/etc/sap.conf
+    $(LOCAL_PATH)/configs/gps/xtwifi.conf:system/etc/xtwifi.conf
 
 # Media
 PRODUCT_COPY_FILES += \
