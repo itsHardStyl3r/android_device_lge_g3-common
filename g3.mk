@@ -17,6 +17,8 @@
 
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+PRODUCT_GMS_CLIENTID_BASE += android-lge
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/lge/g3-common/g3-common-vendor.mk)
 
