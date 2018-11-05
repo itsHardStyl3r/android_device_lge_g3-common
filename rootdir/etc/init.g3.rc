@@ -155,6 +155,9 @@ on boot
     # Create netmgr daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
+    # Set permissions so radio can read
+    chmod 0444 /proc/cmdline
+
     # BCM
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
