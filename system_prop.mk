@@ -47,7 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.ptor.enable=true \
     persist.metadata_dynfps.disable=true \
     ro.opengles.version=196608 \
-    ro.sf.lcd_density=560 \
     debug.sf.disable_backpressure=1 \
     debug.renderengine.backend=threaded
 
