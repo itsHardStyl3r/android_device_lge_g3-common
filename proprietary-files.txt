@@ -122,6 +122,18 @@ vendor/lib/libcneapiclient.so
 vendor/lib/libcneconn.so
 vendor/lib/libcneqmiutils.so
 
+# DPM
+bin/dpm:vendor/bin/dpm
+etc/dpm/dpm.conf:vendor/etc/dpm/dpm.conf
+etc/dpm/nsrm/NsrmConfiguration.xml:vendor/etc/dpm/nsrm/NsrmConfiguration.xml
+etc/permissions/com.qti.dpmframework.xml:vendor/etc/permissions/com.qti.dpmframework.xml
+etc/permissions/dpmapi.xml:vendor/etc/permissions/dpmapi.xml
+framework/com.qti.dpmframework.jar:vendor/framework/com.qti.dpmframework.jar
+framework/dpm.jar:vendor/framework/dpm.jar
+framework/dpmapi.jar:vendor/framework/dpmapi.jar
+vendor/lib/libdpmframework.so
+vendor/lib/libdpmnsrm.so
+
 # Sensors
 bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/sensors.msm8974.so
