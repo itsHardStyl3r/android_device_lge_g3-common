@@ -110,6 +110,18 @@ etc/firmware/DLdata_rev28B_data1.ecl:vendor/firmware/DLdata_rev28B_data1.ecl
 etc/firmware/DLdata_rev28B_data2.ecl:vendor/firmware/DLdata_rev28B_data2.ecl
 etc/firmware/DLdata_rev28B_data3.ecl:vendor/firmware/DLdata_rev28B_data3.ecl
 
+# CNE
+etc/cne/andsfCne.xml:vendor/etc/cne/andsfCne.xml
+etc/cne/SwimConfig.xml:vendor/etc/cne/SwimConfig.xml
+etc/permissions/cneapiclient.xml:vendor/etc/permissions/cneapiclient.xml
+etc/permissions/com.quicinc.cne.xml:vendor/etc/permissions/com.quicinc.cne.xml
+framework/cneapiclient.jar:vendor/framework/cneapiclient.jar
+framework/com.quicinc.cne.jar:vendor/framework/com.quicinc.cne.jar
+vendor/lib/libcne.so
+vendor/lib/libcneapiclient.so
+vendor/lib/libcneconn.so
+vendor/lib/libcneqmiutils.so
+
 # Sensors
 bin/sensors.qcom:vendor/bin/sensors.qcom
 vendor/lib/hw/sensors.msm8974.so
