@@ -47,10 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     ro.sf.lcd_density=560
 
-# DPM
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.dpm.feature=9
-
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.am.reschedule_service=true \

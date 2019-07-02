@@ -117,10 +117,6 @@ on post-fs-data
     mkdir /data/connectivity 0771 system system
     chown system system /data/connectivity
 
-    # Create the directories used by DPM subsystem
-    mkdir /data/dpm 0771 system system
-    mkdir /data/dpm/nsrm 0771 system system
-
     # Vibrator
     chown root system /sys/devices/platform/tspdrv/nforce_timed
     chmod 0664 /sys/devices/platform/tspdrv/nforce_timed
@@ -355,13 +351,6 @@ service imsqmidaemon /vendor/bin/imsqmidaemon
     socket ims_qmid stream 0660 system radio
     group radio net_raw log oem_2950
     writepid /dev/cpuset/system-background/tasks
-
-service dpm /vendor/bin/dpm
-    class late_start
-    socket dpm stream 660 root system
-    socket tcm  stream 660 root inet
-    socket dpmwrapper stream 660 root inet
-    group system readproc inet radio wakelock oem_2950
 
 service charger /charger
     class charger
