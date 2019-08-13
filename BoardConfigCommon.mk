@@ -137,3 +137,9 @@ BOARD_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
 
 # Shipping API level (for CTS backward compatibility)
 PRODUCT_SHIPPING_API_LEVEL := 19
+
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_TREBLE_LINKER_NAMESPACES_OVERRIDE := false
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_COPY_OUT_VENDOR := vendor
