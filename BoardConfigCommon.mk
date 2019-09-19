@@ -19,6 +19,8 @@
 
 LOCAL_PATH := device/lge/g3-common
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
