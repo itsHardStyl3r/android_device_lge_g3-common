@@ -138,3 +138,6 @@ BOARD_SEPOLICY_DIRS += \
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libperipheral_client.so|libshim_binder.so
+
+# Wi-Fi
+WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
