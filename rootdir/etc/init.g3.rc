@@ -42,6 +42,10 @@ on fs
     setprop ro.adb.nonblocking_ffs 0
     
 on post-fs-data
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
     mkdir /tombstones/lpass 0771 system system
@@ -305,6 +309,13 @@ on boot
 # Services start here
 #
 
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 service charger /charger
     class charger
     critical
@@ -467,6 +478,9 @@ on property:sys.boot_completed=1
     write /sys/module/lowmemorykiller/parameters/minfree "14746,18432,22118,25805,33038,41988"
 
     start set_baseband
+    
+    # Stop logcat logger service
+    stop logger
 
 on property:sys.listeners.registered=*
     setprop vendor.sys.keymaster.loaded ${sys.listeners.registered}
