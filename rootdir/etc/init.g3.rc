@@ -319,6 +319,7 @@ service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
 service charger /charger
     class charger
     critical
+    seclabel u:r:healthd:s0
 
 service set_baseband /vendor/bin/sh /vendor/bin/init.baseband.sh
     class late_start
@@ -425,6 +426,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 service qcom-sh /vendor/bin/sh /vendor/bin/init.qcom.sh
     class late_start
     user root
+    seclabel u:r:qti_init_shell:s0
     oneshot
 
 service qmuxd /vendor/bin/qmuxd
