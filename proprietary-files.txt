@@ -16,7 +16,7 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
-lib/hw/camera.vendor.msm8974.so:vendor/lib/hw/camera.vendor.msm8974.so
+lib/hw/camera.vendor.msm8974.so
 lib/libalmalib.so:vendor/lib/libalmalib.so
 lib/libalmcascore.so:vendor/lib/libalmcascore.so
 lib/libalmcaswrap.so:vendor/lib/libalmcaswrap.so
