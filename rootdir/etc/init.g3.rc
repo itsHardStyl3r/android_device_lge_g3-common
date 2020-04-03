@@ -32,7 +32,14 @@ on fs
       restorecon -RF  /sns
 
     mkdir /persist/data 0700 system system
-    
+
+    # debug boot process
+    rmdir /cache/debug
+    mkdir /cache/debug 0770 system root
+    start boot_lc
+    start boot_lc_kernel
+    start boot_lc_crash
+
     # FunctionFS
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
@@ -443,6 +450,24 @@ service sensors /vendor/bin/sensors.qcom
     user root
     group root wakelock
 
+service boot_lc /system/bin/logcat -b all -D -f /cache/debug/boot_lc_full.txt
+    user system
+    group root system
+    disabled
+    oneshot
+
+service boot_lc_crash /system/bin/logcat -b crash -D -f /cache/debug/boot_lc_crash.txt
+    user system
+    group root system
+    disabled
+    oneshot
+
+service boot_lc_kernel /system/bin/logcat -b kernel -D -f /cache/debug/boot_lc_kernel.txt
+    user system
+    group root system
+    disabled
+    oneshot
+
 on property:bluetooth.isEnabled=true
     write /sys/class/bluetooth/hci0/idle_timeout 7000
 
@@ -463,6 +488,10 @@ on property:sys.boot_completed=1
     write /sys/module/lowmemorykiller/parameters/minfree "14746,18432,22118,25805,33038,41988"
 
     start set_baseband
+    
+    stop boot_lc
+    stop boot_lc_crash
+    stop boot_lc_kernel
 
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
