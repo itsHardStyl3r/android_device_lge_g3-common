@@ -127,7 +127,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USE_SDCLANG := true
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
+include device/qcom/sepolicy/legacy-non-um/legacy-non-um.mk
 BOARD_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
 
 # Shims
