@@ -19,6 +19,8 @@ include vendor/lge/g3-common/BoardConfigVendor.mk
 
 LOCAL_PATH := device/lge/g3-common
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
 
