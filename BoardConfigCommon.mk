@@ -21,6 +21,7 @@ LOCAL_PATH := device/lge/g3-common
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Architecture
 TARGET_ARCH := arm
