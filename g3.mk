@@ -109,10 +109,6 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl-legacy \
     camera.msm8974
 
-# CryptfsHW
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
