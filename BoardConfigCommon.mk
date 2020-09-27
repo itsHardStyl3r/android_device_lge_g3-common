@@ -118,6 +118,9 @@ TARGET_USE_SDCLANG := true
 #include device/qcom/sepolicy-legacy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
 
+BOARD_SEPOLICY_DIRS += \
+	device/lge/g3-common/sepolicy-tmp
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libperipheral_client.so|libshim_binder.so
