@@ -48,7 +48,6 @@ on fs
     mount none /system/etc/gps.conf /system/etc/gps_debug.conf bind
 
 on post-fs-data
-    mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
     mkdir /tombstones/lpass 0771 system system
     mkdir /tombstones/wcnss 0771 system system
