@@ -130,3 +130,7 @@ TARGET_LD_SHIM_LIBS := \
 
 # SVELTE config
 MALLOC_SVELTE := true
+
+# VNDK
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
