@@ -335,6 +335,10 @@ service vendor.conn_init /vendor/bin/hwaddrs
     group system wifi bluetooth
     oneshot
 
+on property:sys.boot_completed=1
+    # Enable ZRAM once boot is completed
+    swapon_all /vendor/etc/fstab.g3
+
 on property:vendor.bluetooth.hciattach=true
     start init_bluetooth
 
