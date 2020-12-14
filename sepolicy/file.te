@@ -1,0 +1,3 @@
+# procfs
+type proc_last_kmsg, fs_type, proc_type;
+

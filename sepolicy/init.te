@@ -9,3 +9,6 @@ allow init {
     persist_drm_file
     mpt_file
 }:dir mounton;
+
+allow init proc_last_kmsg:file { r_file_perms setattr };
+
