@@ -1,0 +1,11 @@
+BOARD_HAS_NO_REAL_SDCARD := false
+RECOVERY_VARIANT := twrp
+TARGET_RECOVERY_FSTAB := device/lge/g3-common/twrp/recovery.fstab
+TWRP_INCLUDE_LOGCAT := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
+TW_DEFAULT_BRIGHTNESS := 114
+TW_INCLUDE_CRYPTO := true
+TW_MAX_BRIGHTNESS := 255
+TW_NO_SCREEN_BLANK := true
+TW_THEME := portrait_hdpi
