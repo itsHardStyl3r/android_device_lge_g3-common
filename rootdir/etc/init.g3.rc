@@ -349,8 +349,8 @@ on property:vendor.bluetooth.hciattach=false
     setprop vendor.bluetooth.status off
 
 # --> init.target.rc <--
-service qcamerasvr /vendor/bin/mm-qcamera-daemon
-    class late_start
+service vendor.qcamerasvr /vendor/bin/mm-qcamera-daemon
+    class main
     user camera
     group camera system inet input graphics gps
 
@@ -380,11 +380,11 @@ service adsprpcd /vendor/bin/adsprpcd
 
 # --> init.g3_core.rc <--
 
-# restart qcamerasvr when restarting mediaserver and servicemanager
+# restart vendor.qcamerasvr when restarting mediaserver and servicemanager
 on property:init.svc.media=restarting
-    restart qcamerasvr
+    restart vendor.qcamerasvr
 on property:init.svc.servicemanager=restarting
-    restart qcamerasvr
+    restart vendor.qcamerasvr
 
 service wcnss-service /vendor/bin/wcnss_service
     class late_start
