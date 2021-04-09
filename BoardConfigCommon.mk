@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the proprietary version
--include vendor/lge/g3-common/BoardConfigVendor.mk
+# Inherit from the proprietary version
+include vendor/lge/g3-common/BoardConfigVendor.mk
 
 LOCAL_PATH := device/lge/g3-common
 

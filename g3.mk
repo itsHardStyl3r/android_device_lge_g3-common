@@ -15,7 +15,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/g3-common/g3-common-vendor.mk)
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/lge/g3-common/g3-common-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
