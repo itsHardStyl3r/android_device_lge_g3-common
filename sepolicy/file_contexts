@@ -44,6 +44,9 @@
 # Persist
 /persist-lg(/.*)?                                                        u:object_r:persist_drm_file:s0
 
+# Power
+/system/vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock  u:object_r:hal_power_stats_default_exec:s0
+
 # Sensors
 /persist-lg/sensors(/.*)?                                                u:object_r:sensors_persist_file:s0
 /sns(/.*)?                                                               u:object_r:sensors_persist_file:s0
