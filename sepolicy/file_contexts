@@ -28,6 +28,10 @@
 /sys/devices/mdp.0/qcom,mdss_fb_primary.178/leds/lcd-backlight(/.*)?     u:object_r:sysfs_graphics:s0
 /system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.g3          u:object_r:hal_light_default_exec:s0
 
+# Media DRM
+/data/vendor/mediadrm(/.*)?                                              u:object_r:mediadrm_vendor_data_file:s0
+/system/vendor/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey      u:object_r:hal_drm_clearkey_exec:s0
+
 # Modem
 /dev/block/platform/msm_sdcc\.1/by-name/modem                            u:object_r:modem_block_device:s0
 
