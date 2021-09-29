@@ -23,6 +23,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
+# Chipset
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm
+    ro.soc.model=MSM8974
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bt.bdaddr_path=/data/misc/bluetooth/bdaddr
