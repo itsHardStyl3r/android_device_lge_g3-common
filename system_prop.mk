@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.ptor.enable=true \
     persist.metadata_dynfps.disable=true \
     ro.opengles.version=196608 \
-    debug.sf.disable_backpressure=1
+    debug.sf.disable_backpressure=1 \
+    debug.renderengine.backend=gles
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
