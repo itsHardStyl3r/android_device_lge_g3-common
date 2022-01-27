@@ -24,8 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
-    $(LOCAL_PATH)/overlay/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -110,7 +109,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
     camera.device@1.0-impl-legacy \
-    Snap \
     camera.msm8974
 
 # CryptfsHW
