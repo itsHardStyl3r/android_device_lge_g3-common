@@ -48,6 +48,7 @@ BOARD_RAMDISK_USE_XZ := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_SOURCE := kernel/lge/g3
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Audio
 AUDIO_FEATURE_ENABLED_FLUENCE := true
