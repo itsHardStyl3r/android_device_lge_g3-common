@@ -80,9 +80,6 @@ TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
-# Exclude serif fonts for saving system.img size.
-EXCLUDE_SERIF_FONTS := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 
