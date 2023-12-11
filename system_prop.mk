@@ -53,7 +53,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.metadata_dynfps.disable=true \
     ro.opengles.version=196608 \
     debug.sf.disable_backpressure=1 \
-    debug.renderengine.backend=gles
+    debug.renderengine.backend=gles \
+    ro.hardware.egl=adreno
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
