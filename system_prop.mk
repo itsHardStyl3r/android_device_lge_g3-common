@@ -64,6 +64,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fastbootd.available=true
 
+# Filesystem
+PRODUCT_PROPERTY_OVERRIDES += \
+    fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.am.reschedule_service=true \
