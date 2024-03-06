@@ -40,7 +40,7 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
-BOARD_KERNEL_CMDLINE := androidboot.hardware=g3 msm_rtb.filter=0x0
+BOARD_KERNEL_CMDLINE := androidboot.hardware=g3 msm_rtb.filter=0x0 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
@@ -112,8 +112,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
+#include device/qcom/sepolicy-legacy/sepolicy.mk
+#BOARD_VENDOR_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
 
 BOARD_SEPOLICY_DIRS += \
 	device/lge/g3-common/sepolicy-tmp
