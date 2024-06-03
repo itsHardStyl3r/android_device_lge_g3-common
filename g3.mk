@@ -17,6 +17,7 @@
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/lge/g3-common/g3-common-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
